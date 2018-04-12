@@ -1,5 +1,37 @@
 nav
+  display: flex
+  justify-content: space-around
+  align-items: center
+  padding: 25px 0px
+  border-bottom: 1px solid gray
+
+  .navbar-logo
+    a
+      text-decoration: none
+      color: black
+      font-size: 25px
+      strong
+        color: gray
   .navbar-default
     ul
+      margin: 0
+      padding: 0
+      list-style-type: none
+      li
+        display: inline-block
+        margin-right: 20px
+        a
+          display: block
+          text-align: center
+          text-decoration: none
+          text-transform: lowercase
+          color: black
+          font-size: 14px
+          border-bottom: 1px solid white
+          &:hover
+            border-bottom: 1px solid black
+
       .active
-        background-color: pink
+        a
+          color: gray
+          border-bottom: 1px solid gray

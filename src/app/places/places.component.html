@@ -1,3 +1,9 @@
-<p>
-  aici e locurile!
-</p>
+<div>
+  <div class="myDiv">
+    <a class="addButton" (click)="addPlacesToDb()">Addaugaa!</a>
+  </div>
+  <app-place
+    *ngFor="let place of places"
+    [place]="place">
+  </app-place>
+</div>
