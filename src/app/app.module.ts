@@ -13,7 +13,9 @@ import { HomeComponent } from './home/home.component';
 import { SleepComponent } from './sleep/sleep.component';
 import { PlaceService } from './places/place.service';
 import { PlaceComponent } from './places/place/place.component';
+import { RestaurantService } from './restaurants/restaurant.service';
 import { DataStorageService } from './shared/data-storage.service';
+import { RestaurantComponent } from './restaurants/restaurant/restaurant.component';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { DataStorageService } from './shared/data-storage.service';
     HeaderComponent,
     HomeComponent,
     SleepComponent,
-    PlaceComponent
+    PlaceComponent,
+    RestaurantComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,7 @@ import { DataStorageService } from './shared/data-storage.service';
   ],
   providers: [
     PlaceService,
+    RestaurantService,
     DataStorageService
   ],
   bootstrap: [AppComponent]

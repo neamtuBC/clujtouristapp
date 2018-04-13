@@ -2,6 +2,9 @@
   <div class="myDiv">
     <a class="addButton" (click)="addPlacesToDb()">Addaugaa!</a>
   </div>
+  <div class="myDiv">
+    <a class="addButton forGet" (click)="getPlacesFromDb()">Ia din DB!</a>
+  </div>
   <app-place
     *ngFor="let place of places"
     [place]="place">

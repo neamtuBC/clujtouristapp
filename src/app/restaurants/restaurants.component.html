@@ -1,4 +1,6 @@
-<p>
-  restaurantele aici
-  
-</p>
+<div>
+  <app-restaurant
+    *ngFor="let restaurant of restaurants"
+    [restaurant]="restaurant">
+  </app-restaurant>
+</div>
